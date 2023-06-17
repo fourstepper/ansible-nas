@@ -1,0 +1,7 @@
+- name: Make authorized keys out of local public keys by name
+  ansible.posix.authorized_key:
+    user: root
+    state: present
+    key: "{{ lookup('file', lookup('env', 'HOME') + '/.ssh/' + item) }}"
+  with_items:
+    - id_ed25519.pub

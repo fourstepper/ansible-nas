@@ -1,0 +1,9 @@
+---
+- src: artis3n.tailscale
+  version: "v4.2.2"
+
+- src: git@github.com:fourstepper/ansible-role-packages
+  scm: git
+  version: main
+
+- src: geerlingguy.docker

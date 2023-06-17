@@ -1,0 +1,10 @@
+packages:
+  # general
+  - htop
+  - neovim
+  - rsync
+  - curl
+  - man-db
+  # mailing
+  - bsd-mailx
+  - ssmtp

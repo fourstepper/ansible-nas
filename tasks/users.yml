@@ -1,0 +1,4 @@
+- name: Add the media user # used for sonarr, radarr, jellyfin and transmission
+  ansible.builtin.user:
+    name: media
+    uid: 1888
