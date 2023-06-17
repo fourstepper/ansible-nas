@@ -29,9 +29,6 @@
       become: true
       when: upgrade|default(false)
 
-    # TODO: move me elsewhere
-    # END TODO
-
   roles:
     - role: ansible-role-packages
 
