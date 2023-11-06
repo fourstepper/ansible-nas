@@ -1,0 +1,18 @@
+encryption_passphrase: "{{ borgmatic_encryption_passphrase }}"
+exclude_caches: true
+
+source_directories:
+  - /mnt/shares/ROBIN_PROSTOR
+  - /data/hdd/photos
+  - /data/hdd/shares/chloe_files
+  - /mnt/backups
+
+exclude_patterns: []
+
+repositories:
+    - path: ssh://u375033-sub3@u375033.your-storagebox.de:23/./nas.borg
+      label: hetzner
+
+keep_daily: 7
+keep_weekly: 4
+keep_monthly: 6

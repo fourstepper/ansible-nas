@@ -36,6 +36,8 @@
       vars:
         docker_packages_state: present
 
+    - role: ansible-role-borgmatic
+
     - role: artis3n.tailscale
       vars:
         tailscale_authkey: "{{ lookup('env', 'TAILSCALE_KEY') }}"
