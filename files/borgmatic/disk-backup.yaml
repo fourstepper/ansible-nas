@@ -1,0 +1,17 @@
+encryption_passphrase: "{{ borgmatic_encryption_passphrase }}"
+exclude_caches: true
+
+source_directories:
+  - /mnt
+  - /data/hdd
+  - /media-data/media
+
+exclude_patterns: []
+
+repositories:
+    - path: /disk-backup
+      label: disk-backup
+
+keep_daily: 7
+keep_weekly: 4
+keep_monthly: 6

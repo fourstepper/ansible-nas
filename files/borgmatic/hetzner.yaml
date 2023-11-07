@@ -5,6 +5,7 @@ source_directories:
   - /mnt/shares/ROBIN_PROSTOR
   - /data/hdd/photos
   - /data/hdd/shares/chloe_files
+  - /data/hdd/shares/robin_mbp_timemachine
   - /mnt/backups
 
 exclude_patterns: []
